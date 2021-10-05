@@ -28,7 +28,7 @@ int main(void)
         printf("MASTERCARD\n");
     }
 
-    else if ((check_lenght(n) == 16) && (check_type_visa(n) == 4) && (check_number(n, lenght) == 0))
+    else if ((check_lenght(n) == 16 || check_lenght(n) == 13) && (check_type_visa(n) == 4) && (check_number(n, lenght) == 0))
     {
         printf("VISA\n");
     }
